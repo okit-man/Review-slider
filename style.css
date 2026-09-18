@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #f0f0f0;
+}
+
+.slider {
+    width: 100%;
+    /* max-width: 720px; */
+    margin: 0 auto;
+    margin-top: 2rem;
+    align-items: center;
+    /* background-color: red; */
+    padding: 1rem 0;
+    position: relative;
+}
+.review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.review h2 {
+    text-transform: capitalize;
+    margin-top: 1rem;
+    font-size: 2.2rem;
+    letter-spacing: 0.2rem;
+    /* background-color: red; */
+
+}
+ span {
+    color: #44a9e5;
+    font-size: 1.8rem;
+    margin-right: 1rem;
+}
+.slider-container {
+    /* background-color: red; */
+    display: flex;
+    text-align: center;
+    height: 450px;
+    width: 720px;
+    margin: 0 auto;
+}
+.slide {
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background-color: red; */
+}
+.img {
+    object-fit: cover;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    /* background-color: hsl(205, 90%, 76%); */
+    /* background-color: hsl(205, 78%, 60%); */
+    /* background-color:  hsl(211, 27%, 70%); */
+    background-color: #f0f0f0;
+    border: 1px solid hsl(205, 78%, 60%);
+    padding: 0.25rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) ;
+    margin-bottom: 1rem;
+}
+h3 {
+    text-transform: uppercase;
+    color: #44a9e5;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.1rem;
+
+}
+.title {
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500px;
+    margin-bottom: 1.5rem;
+}
+.text {
+    text-transform: lowercase;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+}
+.quote-icon {
+    font-size: 4.5rem;
+    color: #44a9e5;
+    /* margin-bottom: 3.5rem; */
+    
+}
+.btn {
+    background-color:  hsl(211, 27%, 70%);
+    color: black;
+    font-size: 1rem;
+    border: transparent;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.35rem;
+    position: absolute;
+    top: 175px;
+    cursor: pointer;
+}
+.prv-btn {
+    left: 18rem;
+}
+.next-btn {
+    right: 18rem;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .slider {
+        /* background-color: green; */
+        width: 90%;
+        margin-top: 1.5rem;
+        padding: 0.8rem 0;
+
+    }
+    .review {
+        /* background-color: red; */
+         margin-bottom: 2rem;
+    }
+    .review h2 {
+        margin-top: 0.8rem;
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+    }
+    span {
+        font-size: 1.6rem;
+    }
+    .slider-container {
+        /* background-color: red; */
+        height: 400px;
+        width: 620px;
+    }
+    img {
+        width: 140px;
+        height: 140px;
+        padding: 0.23rem;
+        margin-bottom: 1.85rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+        letter-spacing: 0.1rem;
+        margin-bottom: 1rem;
+    }
+    .title {
+        font-size: 1.2rem;
+        font-weight: 400px;
+        margin-bottom: 1.3rem;
+    }
+    .text {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        margin-bottom: 1.8rem;
+    }
+    .quote-icon {
+        font-size: 3.5rem;
+    }
+    .btn {
+        top: 170px;
+    }
+    .prv-btn {
+    left: 10rem;
+    }
+    .next-btn {
+        right: 10rem;
+    }
+
+    
+}
+@media screen and (max-width: 768px) {
+    .slider {
+        background-color: brown;
+        width: 80%;
+        margin-top: 1rem;
+        padding: 0.7rem;
+    }
+}
+/* @media screen and (max-width: 480px) {
+    .slider {
+        background-color: burlywood;
+        width: 75%;
+    }
+    
+} */
