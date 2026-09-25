@@ -33,7 +33,9 @@ const startSlider = (type) => {
     // get all classes
     const active = document.querySelector(".active");
     const last = document.querySelector(".last");
+    // moving in the direction of the right
     let next = active.nextElementSibling;
+    // if we're at the last slide, go back to the first
     if (!next) {
         next = container.firstElementChild
     };
@@ -46,7 +48,9 @@ const startSlider = (type) => {
     if (type === 'prev') {
         active.classList.add("next");
         last.classList.add("active")
+        
         next = last.previousElementSibling
+        // if we're at the first slide, go to the last 
         if (!next) {
             next = container.lastElementChild
         }

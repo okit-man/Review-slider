@@ -8,20 +8,24 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #f0f0f0;
     /* height: 100%; */
-}
 
+    overflow-x: hidden;
+}
+/* slider */
 .slider {
     width: 100%;
     /* height: 100%; */
-    /* max-width: 720px; */
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    /* margin: 0 auto; */
     margin-top: 2rem;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem;
     /* set relative buttons */
     position: relative;
-
+    /* background-color: red; */
 }
+/* Review Heading */
 .review {
     display: flex;
     justify-content: center;
@@ -31,26 +35,31 @@ body {
 .review h2 {
     text-transform: capitalize;
     margin-top: 1rem;
-    font-size: 2.2rem;
+    font-size: 3rem;
     letter-spacing: 0.2rem;
-    /* background-color: red; */
-
 }
- span {
+ .review span {
     color: #44a9e5;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-right: 1rem;
 }
+
+
+/* slider container */
 .slider-container {
-    /* background-color: red; */
+    /* background-color: blue; */
     display: flex;
     position: relative;
     text-align: center;
-    height: 450px;
-    width: 720px;
+    height: 550px;
+
+    /* width: 720px; */
+    /* width: min(720px); */
+
     overflow: hidden;
     margin: 0 auto;
 }
+/* individual slide */
 .slide {
     position: absolute;
     top: 0;
@@ -59,6 +68,7 @@ body {
     height: 100%;
     opacity: 0;
     transition: all 0.3s ease-in-out;
+    padding: 1rem;
 }
 .slide.active {
     opacity: 1;
@@ -70,14 +80,12 @@ body {
 .slide.last {
     transform: translateX(-100%);
 }
+/* image */
 .img {
     object-fit: cover;
     width: 170px;
     height: 170px;
     border-radius: 50%;
-    /* background-color: hsl(205, 90%, 76%); */
-    /* background-color: hsl(205, 78%, 60%); */
-    /* background-color:  hsl(211, 27%, 70%); */
     background-color: #f0f0f0;
     border: 1px solid hsl(205, 78%, 60%);
     padding: 0.25rem;
@@ -97,20 +105,24 @@ h3 {
     text-transform: capitalize;
     font-size: 1.3rem;
     letter-spacing: 0.1rem;
-    font-weight: 500px;
+    font-weight: 500;
     margin-bottom: 1.5rem;
 }
 .text {
     text-transform: lowercase;
     font-size: 1.2rem;
     line-height: 1.8rem;
-    /* margin-bottom: 2rem; */
+    margin-bottom: 2rem;
+    text-align: center;
+    
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .quote-icon {
     font-size: 4.5rem;
     color: #44a9e5;
-    /* margin-bottom: 3.5rem; */
-    
 }
 .btn {
     background-color:  hsl(211, 27%, 70%);
@@ -124,10 +136,10 @@ h3 {
     cursor: pointer;
 }
 .prv-btn {
-    left: 18rem;
+    left: 14rem;
 }
 .next-btn {
-    right: 18rem;
+    right: 14rem;
 }
 
 
@@ -135,10 +147,9 @@ h3 {
 @media screen and (max-width: 992px) {
     .slider {
         /* background-color: green; */
-        width: 90%;
         margin-top: 1.5rem;
-        padding: 0.8rem 0;
-
+        /* width: 90%; */
+        /* padding: 0.8rem 0; */
     }
     .review {
         /* background-color: red; */
@@ -146,40 +157,41 @@ h3 {
     }
     .review h2 {
         margin-top: 0.8rem;
-        font-size: 2rem;
+        font-size: 2.5rem;
         letter-spacing: 0.1rem;
     }
-    span {
-        font-size: 1.6rem;
+    .review span {
+        font-size: 1.7rem;
+        margin-right: 0.8rem;
+
     }
     .slider-container {
         /* background-color: red; */
-        height: 400px;
-        width: 620px;
+        height: 530px;
+        width: 100%;
+        /* width: 620px; */
     }
     img {
-        width: 140px;
-        height: 140px;
+        width: 150px;
+        height: 150px;
         padding: 0.23rem;
-        margin-bottom: 1.85rem;
+        margin-bottom: 0.85rem;
     }
     h3 {
         font-size: 1.1rem;
-        letter-spacing: 0.1rem;
         margin-bottom: 1rem;
     }
     .title {
         font-size: 1.2rem;
-        font-weight: 400px;
         margin-bottom: 1.3rem;
     }
     .text {
         font-size: 1.1rem;
-        line-height: 1.6rem;
+        line-height: 1.7rem;
         margin-bottom: 1.8rem;
     }
     .quote-icon {
-        font-size: 3.5rem;
+        font-size: 3.8rem;
     }
     .btn {
         top: 170px;
@@ -190,21 +202,109 @@ h3 {
     .next-btn {
         right: 10rem;
     }
+}
 
+@media screen and (max-width: 768px) {
+    .slider {
+        /* background-color: brown; */
+        /* width: 80%; */
+        margin-top: 1rem;
+        padding: 1rem 0.5rem;
+
+    }
+     .review {
+         margin-bottom: 1.5rem;
+    }
+    .review h2 {
+        margin-top: 0.5rem;
+        font-size: 2rem;        
+    }
+    .review span {
+        font-size: 1.5rem;
+        margin-right: 0.6rem;
+    }
+    .slider-container {
+        height: 520px;
+    }
+     img {
+        width: 130px;
+        height: 130px;
+    }
+     h3 {
+        font-size: 1rem;
+        margin-bottom: 0.95rem;
+    }
+    .title {
+        font-size: 1.1rem;
+        margin-bottom: 1.2rem;
+        
+    }
+    .text {
+        font-size: 1rem;
+        line-height: 1.59rem;
+    }
+     .quote-icon {
+        font-size: 3.3rem;
+    }
+    .btn {
+        top: 160px;
+    }
+    .prv-btn {
+        left: 3rem;
+    }
+    .next-btn {
+        right: 3rem;
+    } 
+}
+@media screen and (max-width: 480px) {
+    .slider {
+        /* background-color: burlywood; */
+        /* width: 70%; */
+        margin-top: 0.9rem;
+        padding: 0.5rem;
+    }
+    .review {
+         margin-bottom: 1rem;
+    }
+    .review h2 {
+        font-size: 1.6rem;        
+    }
+    .review span {
+        font-size: 1.3rem;
+        margin-right: 0.4rem;
+    }
+    .slider-container {
+        height: 500px;
+    }
+     img {
+        width: 120px;
+        height: 120px;
+    }
+     h3 {
+        font-size: 0.8rem;
+        margin-bottom: 0.7rem;
+    }
+    .title {
+        font-size: 1rem;
+        margin-bottom: 1.1rem;
+        line-height: 1.53rem;
+    }
+     .text {
+        font-size: 0.89rem;
+    }
+    .quote-icon {
+        font-size: 3rem;
+    }
+    .btn {
+        top: 150px;
+        font-size: 0.89rem;
+        /* padding: 0.3rem 0.45rem;  */
+    }
+    .prv-btn {
+        left: 5rem;
+    }
+    .next-btn {
+        right: 5rem;
+    } 
     
 }
-/* @media screen and (max-width: 768px) {
-    .slider {
-        background-color: brown;
-        width: 80%;
-        margin-top: 1rem;
-        padding: 0.7rem;
-    }
-} */
-/* @media screen and (max-width: 480px) {
-    .slider {
-        background-color: burlywood;
-        width: 75%;
-    }
-    
-} */
