@@ -14,15 +14,15 @@ body {
 /* slider */
 .slider {
     width: 100%;
-    /* height: 100%; */
     max-width: 1200px;
-    margin: 2rem auto 0;
-    /* margin: 0 auto; */
-    margin-top: 2rem;
+    margin: 1rem auto 0;
     text-align: center;
     padding: 1rem;
     /* set relative buttons */
     position: relative;
+    /* height: 100%; */
+    /* margin: 0 auto; */
+    /* margin-top: 2rem; */
     /* background-color: red; */
 }
 /* Review Heading */
@@ -31,10 +31,11 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem;
+     /* background-color: blue; */
 }
 .review h2 {
     text-transform: capitalize;
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 3rem;
     letter-spacing: 0.2rem;
 }
@@ -106,13 +107,13 @@ h3 {
     font-size: 1.3rem;
     letter-spacing: 0.1rem;
     font-weight: 500;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.3rem;
 }
 .text {
     text-transform: lowercase;
     font-size: 1.2rem;
     line-height: 1.8rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     
     max-width: 650px;
@@ -121,7 +122,7 @@ h3 {
 
 }
 .quote-icon {
-    font-size: 4.5rem;
+    font-size: 5rem;
     color: #44a9e5;
 }
 .btn {
@@ -132,14 +133,14 @@ h3 {
     border-radius: 0.25rem;
     padding: 0.25rem 0.35rem;
     position: absolute;
-    top: 175px;
+    top: 220px;
     cursor: pointer;
 }
 .prv-btn {
-    left: 14rem;
+    left: 8rem;
 }
 .next-btn {
-    right: 14rem;
+    right: 8rem;
 }
 
 
@@ -194,13 +195,13 @@ h3 {
         font-size: 3.8rem;
     }
     .btn {
-        top: 170px;
+        top: 200px;
     }
     .prv-btn {
-    left: 10rem;
+    left: 7rem;
     }
     .next-btn {
-        right: 10rem;
+        right: 7rem;
     }
 }
 
@@ -227,8 +228,8 @@ h3 {
         height: 520px;
     }
      img {
-        width: 130px;
-        height: 130px;
+        width: 120px;
+        height: 120px;
     }
      h3 {
         font-size: 1rem;
@@ -248,12 +249,13 @@ h3 {
     }
     .btn {
         top: 160px;
+        /* top: 200px; */
     }
     .prv-btn {
-        left: 3rem;
+        left: 5rem;
     }
     .next-btn {
-        right: 3rem;
+        right: 5rem;
     } 
 }
 @media screen and (max-width: 480px) {
@@ -277,8 +279,8 @@ h3 {
         height: 500px;
     }
      img {
-        width: 120px;
-        height: 120px;
+        width: 110px;
+        height: 110px;
     }
      h3 {
         font-size: 0.8rem;
@@ -296,15 +298,15 @@ h3 {
         font-size: 3rem;
     }
     .btn {
-        top: 150px;
+        top: 140px;
         font-size: 0.89rem;
         /* padding: 0.3rem 0.45rem;  */
     }
     .prv-btn {
-        left: 5rem;
+        left: 2rem;
     }
     .next-btn {
-        right: 5rem;
+        right: 2rem;
     } 
     
 }
