@@ -276,7 +276,8 @@ h3 {
         margin-right: 0.4rem;
     }
     .slider-container {
-        height: 500px;
+        height: 515px;
+        /* background-color: aquamarine; */
     }
      img {
         width: 110px;
